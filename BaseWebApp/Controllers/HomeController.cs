@@ -15,13 +15,6 @@ namespace BaseInternational.Controllers
             return View();
         }
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
@@ -57,9 +50,9 @@ namespace BaseInternational.Controllers
             return View();
         }
 
-        public IActionResult MineralWaterItem()
+        public IActionResult ActiveWearWomen()
         {
-            ViewData["Message"] = "Your Philosophy page.";
+            ViewData["Message"] = "Your Active Wear - Women page.";
 
             return View();
         }
