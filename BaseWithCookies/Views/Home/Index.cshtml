@@ -1,0 +1,56 @@
+﻿@{ ViewData["Title"] = "Home Page"; }
+
+<!-- Header Carousel -->
+<header id="myCarousel" class="carousel slide">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="fill" style="background-image:url('../images/Mountain-biking_1200x600_533443205.jpg');"></div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+    <br>
+    <!-- Portfolio Section -->
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-portfolio img-hover" src="../images/vitamin-product-line_text.jpg" alt="">
+                </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-portfolio img-hover" src="../images/Couple-running_467520371-1.jpg" alt="">
+                </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-portfolio img-hover" src="../images/mineral-water-product-line_text-1.jpg" alt="">
+                </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-portfolio img-hover" src="../images/running-in-desert_124821078.jpg" alt="">
+                </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-portfolio img-hover" src="../images/h-horizontal-logo.png" alt="">
+                </a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-portfolio img-hover" src="../images/surfer_160896636.jpg" alt="">
+                </a>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+    </script>
