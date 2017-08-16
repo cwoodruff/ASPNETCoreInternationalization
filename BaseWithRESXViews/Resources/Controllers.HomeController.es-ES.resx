@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActiveApparel" xml:space="preserve">
+    <value>Ropa H + Sport ACTIVE</value>
+  </data>
+  <data name="ActiveWearWomen" xml:space="preserve">
+    <value>Ropa Deportiva- Mujer</value>
+  </data>
+  <data name="AngelaHashtonBio" xml:space="preserve">
+    <value>Angela Hashton joined the company in 2009, to initiate new relationships for our growing line of H+ Sports active apparel. After being with the company for a year, she was promoted to Director of Sales. Angela is the drive behind the H+ Sport ACTIVE product line and has an uncanny ability to formulate strategies that have helped build our unified sales force. Educating people about health and nutrition is something that Angela holds dear, and her utmost compassion for others helps make her a leader in the industry.</value>
+  </data>
+  <data name="Blueberry" xml:space="preserve">
+    <value>arándano</value>
+  </data>
+  <data name="BuyNow" xml:space="preserve">
+    <value>¡COMPRA AHORA!</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>EMPRESA</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>CONTACTO</value>
+  </data>
+  <data name="CreativeDirector" xml:space="preserve">
+    <value>Director creativo</value>
+  </data>
+  <data name="DancePants" xml:space="preserve">
+    <value>Pantalones de yoga</value>
+  </data>
+  <data name="DancePantsDescript" xml:space="preserve">
+    <value>Bailando la samba, aprendiendo una pose de yoga, o escalando la pared de escalada, nuestros pantalones de baile elástico, hecha de 80% algodón orgánico y 20% Lycra, son los pantalones de entrenamiento más versátiles y cómodos que jamás tendrás el placer de llevar.</value>
+  </data>
+  <data name="DirectorMarketing" xml:space="preserve">
+    <value>Director de Marketing</value>
+  </data>
+  <data name="DirectorProdDev" xml:space="preserve">
+    <value>Director de desarrollo de productos</value>
+  </data>
+  <data name="DirectorSales" xml:space="preserve">
+    <value>Director de ventas</value>
+  </data>
+  <data name="Discloser" xml:space="preserve">
+    <value>Esta es una empresa ficticia creada por LinkedIn Corporation, o sus afiliados, exclusivamente para la creación y desarrollo de materiales para educación. Cualquier similitud con productos o servicios reales es pura coincidencia. La información sobre los productos o servicios también es ficticia y no se debe interpretar como representativa de productos o servicios reales en el mercado de un producto o categoría de servicio similar.</value>
+  </data>
+  <data name="HenryTwillBio" xml:space="preserve">
+    <value>Henry Twill, fundador y CEO de H + Sport, trabaja con la nutricionista de celebridades Jill Bayner, CNS, para ofrecerle recetas y consejos diseñados para maximizar su rendimiento deportivo, mientras minimizando su tiempo en la cocina. Lleno de recetas sabrosas y saludables, esta colección promete éxito, con los atletas y la gente normal.</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>HISTORIA</value>
+  </data>
+  <data name="HistoryText" xml:space="preserve">
+    <value>In 2006, H+ Sport founder Henry Twill set out to create supplements and nutritional products made from the purest ingredients and backed by scientific and performance data – to provide a strong basis of trust and accountability. His quest began while training for his first 5K marathon, after recovering from a lengthy injury that left him with residual aches, pains, and decreased athletic performance. He was disheartened by the vast array of supplements and nutritional products on the market that subsisted of lofty claims, and little proof of those claims. He yearned for simple and natural ingredients, in their purest form, instead of labels with lengthy chemical names and disclaimers. He also cared immensely for the environment, and wanted to find products that were responsibly sourced. When no products lived up to his strict requirements, Henry set his sights on creating products that catered to his own vision.
+
+Today that vision has become H+ Sport…offering a variety of supplements, energy bars, rehydration solutions, and active wear that complement active lifestyles. At the foundation of H+ Sports are products backed by scientific and performance data, that have been created using natural and renewable resources.
+
+H+ Sport is dedicated to creating eco-friendly, high-quality, nutrient-rich, nutritional products that enhance active lifestyles. In addition, our H+ Sport Active clothing line is made to be functional, stylish, comfortable, and durable, using all natural and organic fibers.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>LA PAGINA INICIAL</value>
+  </data>
+  <data name="Jacket" xml:space="preserve">
+    <value>Chaqueta impermeable</value>
+  </data>
+  <data name="JacketDescript" xml:space="preserve">
+    <value>Viento y la lluvia no son rival para nuestra chaqueta impermeable de bambú orgánicos para hombres y mujeres. Triple costuras cosidas, bolsillos con cremallera y capucha apretada estancia son sólo algunas de las características de nuestra chaqueta superventas.</value>
+  </data>
+  <data name="Jeans" xml:space="preserve">
+    <value>Pantalones vaqueros de Skater Grunge</value>
+  </data>
+  <data name="JeansDescript" xml:space="preserve">
+    <value>Nuestros pantalones vaqueros de corte de niño son para los hombres y las mujeres que aprecian que skate park moda no son sólo para los patinadores. Hecho de la mezclilla de algodón orgánico más suave y más flexible.</value>
+  </data>
+  <data name="JessicaNewtonSmithBio" xml:space="preserve">
+    <value>Jessica Newton-Smith joined us in 2012 and brings more than 10 years of financial management experience to H+ Sport, spanning a variety of companies and industries ranging from Fortune 500 agencies to start-ups. She has extensive experience working in emerging markets and in the consumer and retail sectors. Jessica’s understanding of how to transform a small business into an expanding corporation has been crucial to launching H+ Sport into the forefront of the nutrition and sports apparel industries.</value>
+  </data>
+  <data name="LemonLime" xml:space="preserve">
+    <value>limón- lima</value>
+  </data>
+  <data name="LogIn" xml:space="preserve">
+    <value>INICIA SESIÓN</value>
+  </data>
+  <data name="MariaSontasBio" xml:space="preserve">
+    <value>Maria Sontas has been with H+ Sport since 2010. She oversees the company’s marketing strategy – ensuring advertising campaigns, social media initiatives, and events are planned to position the company strongly in a competitive marketplace. Maria is a competing triathlete and her passion for our products shows in her unique ability to drive awareness and increase our presence around the world.</value>
+  </data>
+  <data name="MichaelLewistonBio" xml:space="preserve">
+    <value>Michael Lewiston is a multi-faceted creative person who began his career as a designer for a small business firm, while also working as an independent painter and sculptor. In 2007, Henry Twill was impressed by Michael’s creative work in a national ad campaign for a high profile sports apparel company. Henry approached Michael, and asked him to manage creative direction for the H+ Sport ACTIVE apparel line. In 2009, Michael was promoted to Creative Director and his creative vision has since won him accolades, awards, and notoriety in industry publications.</value>
+  </data>
+  <data name="MineralWater" xml:space="preserve">
+    <value>H + Deporte Agua Mineral</value>
+  </data>
+  <data name="MineralWaterFlavors" xml:space="preserve">
+    <value>Fresa, frambuesa, melocotón, naranja, limón- lima, arándano</value>
+  </data>
+  <data name="MineralWaterFlavorsText" xml:space="preserve">
+    <value>En seis sabores naturales deliciosas</value>
+  </data>
+  <data name="MineralWaterNoText" xml:space="preserve">
+    <value>SIN sabores artificiales, colores o conservantes
+SIN azucar
+SIN sal
+SIN soy
+SIN lácteos
+SIN gluten
+SIN levadura</value>
+  </data>
+  <data name="MineralWaterText" xml:space="preserve">
+    <value>Rehidratación natural. Todo lo que necesitas. Una porción de 240 ml satisface la necesidad nutricional de un día con más de 12 vitaminas y minerales.</value>
+  </data>
+  <data name="MineralWaterText2" xml:space="preserve">
+    <value>H + Sport El agua mineral comienza con el agua mineral artesanal más pura y más limpia de los manantiales naturales de América del Norte. Añadimos nuestro H + Sport Multi-Vitamin Powder patentado, y extracto de fruta natural, para darle a nuestro Agua Mineral su sabor característico.</value>
+  </data>
+  <data name="MineralWaterYouGet" xml:space="preserve">
+    <value>Con H + Sport Agua Mineral obtendrá:</value>
+  </data>
+  <data name="Orange" xml:space="preserve">
+    <value>naranja</value>
+  </data>
+  <data name="Peach" xml:space="preserve">
+    <value>melocotón</value>
+  </data>
+  <data name="PerformInComfort" xml:space="preserve">
+    <value>Realizar con comodidad</value>
+  </data>
+  <data name="Philosophy" xml:space="preserve">
+    <value>FILOSOFÍA</value>
+  </data>
+  <data name="PhilosophyText" xml:space="preserve">
+    <value>Estamos comprometidos a crear productos que desafían la convención, e inspirar a nuestros clientes con orgullo y confianza. De hecho, garantizamos cada producto que vendemos. Si no está 100% satisfecho con su compra, puede devolverlo durante los primeros 60 días, nada que objetar.
+
+Creemos en proveer toda la información que necesita para tomar una decisión informada sobre cada compra. Como resultado, queremos que nuestra nuestra informacion de materiales, procesamiento y fabricación sea lo más accesibles posible. Nuestro sitio en www.hplussport.com tiene toda la informacion nutricional y la información de prendas disponibles. Queremos asegurar que usted siempre tenga acceso a la información y apoyo que necesita.
+
+Creemos firmemente que las prácticas comerciales transparentes son necesarias para mantener nuestra empresa honesta y comprometida con nuestros valores, ideales y clientes. En apoyo de esto, usted puede conseguir información sobre nuestras normas de empresa, guía de empleados, materiales de abastecimiento, contratos de fabricación, y mucho más en nuestro sitio. Usted merece saber cómo creamos productos, y también nuestra filosofía de trabajo.
+
+La filantropía es muy importante para nosotros. Por eso, cada empleado se ofrece su servicio a la organización de su elección, dos horas cada semana, durante horas de trabajo. Sabemos que haciendo el bien promove un ciclo de voluntariado que sólo sigue dando.</value>
+  </data>
+  <data name="PhiTangBio" xml:space="preserve">
+    <value>Phi Tang joined H+ Sports in 2007 as Manager of Marketing Research and Product Development. He was promoted to Director of Product Development in 2011. He has made major contributions to the discovery, development, and implementation of the H+ Sport product lines. Before joining the company he worked as a scientific expert and brings vast knowledge of ingredients and new technologies.</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>PRODUCTOS</value>
+  </data>
+  <data name="ProductText" xml:space="preserve">
+    <value>Estamos comprometidos a crear productos que desafían la convención e inspirar a nuestros clientes con orgullo y confianza.</value>
+  </data>
+  <data name="Raspberry" xml:space="preserve">
+    <value>frambuesa</value>
+  </data>
+  <data name="RebuildAndNourish" xml:space="preserve">
+    <value>Reconstruir y nutrir</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>REGISTRO</value>
+  </data>
+  <data name="RehydrateAndRefresh" xml:space="preserve">
+    <value>Rehidratar y refrescar</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>ENVIA</value>
+  </data>
+  <data name="Shop" xml:space="preserve">
+    <value>TIENDA</value>
+  </data>
+  <data name="Strawberry" xml:space="preserve">
+    <value>Fresa</value>
+  </data>
+  <data name="Supplements" xml:space="preserve">
+    <value>H + Sport POWER Suplementos</value>
+  </data>
+  <data name="TankTop" xml:space="preserve">
+    <value>Tanque Suave</value>
+  </data>
+  <data name="TankTopDescript" xml:space="preserve">
+    <value>Este tanque versátil se puede usar en el gimnasio. También se puede llevar  debajo de una chaqueta, o para un día al sol. Hecho de nuestra mezcla orgánica patentada de bambú y algodón, nuestro tanque ultra suave nunca deja de sentirse suave, incluso cuando se olvida del suavizante de telas.</value>
+  </data>
+  <data name="Team" xml:space="preserve">
+    <value>EQUIPO</value>
+  </data>
+  <data name="TrainingTank" xml:space="preserve">
+    <value>Cross-Back Training Tank</value>
+  </data>
+  <data name="TrainingTankDescript" xml:space="preserve">
+    <value>Nuestro tanque de entrenamiento es hecho de algodón orgánico con Lycra 10% para la forma y el apoyo, y un corte femenino halagadoro.</value>
+  </data>
+  <data name="Vest" xml:space="preserve">
+    <value>Chaleco térmico unisex</value>
+  </data>
+  <data name="VestDescript" xml:space="preserve">
+    <value>Nuestro chaleco térmico, hecha de bambú orgánico con plástico reciclado por relleno, es una de las favoritas de los hombres y mujeres. Que ayuda al medio ambiente y tiene una pieza fácil de usar para muchas ocasiones.</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Su email (requerido)</value>
+  </data>
+  <data name="YourMessage" xml:space="preserve">
+    <value>Su mensaje</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>Su nombre (requerido)</value>
+  </data>
+  <data name="YourPhone" xml:space="preserve">
+    <value>Su número de teléfono</value>
+  </data>
+</root>

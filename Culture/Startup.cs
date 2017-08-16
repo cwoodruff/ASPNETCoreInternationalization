@@ -46,7 +46,7 @@ namespace Culture
                 new CultureInfo("es-ES"),
                 new CultureInfo("de-DE"),
                 new CultureInfo("fr-FR"),
-                new CultureInfo("ko-KR")
+                new CultureInfo("sv-SE")
             };
 
             var options = new RequestLocalizationOptions {
@@ -54,21 +54,7 @@ namespace Culture
                 SupportedCultures = supportedCultures,
                 SupportedUICultures = supportedCultures
             };
-            
-            options.RequestCultureProviders.Insert(0, new CustomRequestCultureProvider(context =>
-            {
-                var pathSegments = context.Request.Path.Value.Split('/');
 
-                var culture = pathSegments.FirstOrDefault(x => x.StartsWith("culture-"))?.Substring("culture-".Length);
-                var uiCulture = pathSegments.FirstOrDefault(x => x.StartsWith("ui-culture-"))?.Substring("ui-culture-".Length);
-
-                var result = new ProviderCultureResult(culture, uiCulture);
-                
-                return Task.FromResult(result);
-            }));
-            
-            options.RequestCultureProviders.Insert(1, new MyRequestCultureProvider());
-            
             return options;
         }
         
