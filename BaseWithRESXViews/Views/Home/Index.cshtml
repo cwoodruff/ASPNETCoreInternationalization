@@ -1,4 +1,21 @@
-﻿@{ ViewData["Title"] = "Home Page"; }
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Home"] = Localizer["Home"]; 
+    ViewData["Company"] = Localizer["Company"]; 
+    ViewData["Philosophy"] = Localizer["Philosophy"]; 
+    ViewData["History"] = Localizer["History"]; 
+    ViewData["Team"] = Localizer["Team"]; 
+    ViewData["Products"] = Localizer["Products"]; 
+    ViewData["MineralWater"] = Localizer["MineralWater"]; 
+    ViewData["ActiveWearWomen"] = Localizer["ActiveWearWomen"]; 
+    ViewData["Contact"] = Localizer["Contact"]; 
+    ViewData["Footer"] = Localizer["Discloser"]; 
+    ViewData["Register"] = Localizer["Register"]; 
+    ViewData["LogIn"] = Localizer["LogIn"]; 
+}
 
 <!-- Header Carousel -->
 <header id="myCarousel" class="carousel slide">

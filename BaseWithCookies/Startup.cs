@@ -15,6 +15,9 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Localization;
 using System.Globalization;
 
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.Extensions.Options;
+
 namespace BaseInternational {
     public class Startup {
         public Startup (IConfiguration configuration) {
@@ -38,7 +41,12 @@ namespace BaseInternational {
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender> ();
 
-            services.AddMvc ();
+            services.AddMvc()
+                // Add support for finding localized views, based on file name suffix, e.g. Index.fr.cshtml
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                // Add support for localizing strings in data annotations (e.g. validation messages) via the
+                // IStringLocalizer abstractions.
+                .AddDataAnnotationsLocalization();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +63,10 @@ namespace BaseInternational {
 
             app.UseAuthentication ();
 
-            app.UseRequestLocalization(BuildLocalizationOptions());
+            var requestoptions = BuildLocalizationOptions();
+
+            app.UseRequestLocalization(requestoptions);
+            var locOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
 
             app.UseMvc (routes => {
                 routes.MapRoute (
@@ -74,11 +85,12 @@ namespace BaseInternational {
                 new CultureInfo("pt-PT")
             };
 
-            return new RequestLocalizationOptions {
-                DefaultRequestCulture = new RequestCulture("en-US"),
-                SupportedCultures = supportedCultures,
-                SupportedUICultures = supportedCultures
-            };
+            var options = new RequestLocalizationOptions();
+            options.DefaultRequestCulture = new RequestCulture(culture: "en-US", uiCulture: "en-US");
+            options.SupportedCultures = supportedCultures;
+            options.SupportedUICultures = supportedCultures;
+
+            return options;
         }
     }
 }

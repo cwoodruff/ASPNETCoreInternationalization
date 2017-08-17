@@ -41,8 +41,8 @@ namespace BaseInternational {
 
             services.AddMvc()
                 .AddViewLocalization(
-                    LanguageViewLocationExpanderFormat.Suffix,
-                    opts => { opts.ResourcesPath = "Resources"; });
+                    options => { options.ResourcesPath = "Resources"; })
+                .AddDataAnnotationsLocalization();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

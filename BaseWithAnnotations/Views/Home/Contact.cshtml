@@ -1,16 +1,4 @@
-﻿@using Microsoft.AspNetCore.Mvc.Localization
-
-@inject IViewLocalizer Localizer
-
-@{
-    ViewData["Home"] = Localizer["Home"];
-    ViewData["YourName"] = Localizer["YourName"]; 
-    ViewData["YourPhone"] = Localizer["YourPhone"]; 
-    ViewData["YourEmail"] = Localizer["YourEmail"]; 
-    ViewData["YourMessage"] = Localizer["YourMessage"]; 
-    ViewData["Send"] = Localizer["Send"];
-}
-
+﻿@{ ViewData["Title"] = "Contact"; }
 <!-- Page Content -->
 <div class="container">
 
@@ -32,6 +20,7 @@
     <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
     <div class="row">
         <div class="col-md-8">
+            <h3>Send us a Message</h3>
             <form name="sentMessage" id="contactForm" novalidate>
                 <div class="control-group form-group">
                     <div class="controls">
