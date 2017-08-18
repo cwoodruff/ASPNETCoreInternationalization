@@ -1,0 +1,111 @@
+﻿@{ ViewData["Title"] = "Mineral Water"; }
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">@ViewData["MineralWater"]
+            </h1>
+            <ol class="breadcrumb">
+                <li><a asp-controller="Home" asp-action="Index">@ViewData["Home"]</a>
+                </li>
+                <li class="active">@ViewData["MineralWater"]</li>
+            </ol>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Image Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="../images/Mineral-water-information.png" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+        <br>
+        <!-- Image Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="../images/mineral-water-product-line_featured-1.jpg" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+        <br>
+
+        <div class="row">
+            <div class="col-md-7">
+                <img class="img-responsive" src="../images/Drinking-water-at-sunset_100070651.jpg" alt="">
+            </div>
+            <div class="col-md-5">
+                <p>@ViewData["MineralWaterText2"]</p>
+
+                <p>@ViewData["MineralWaterYouGet"]</p>
+
+                @ViewData["MineralWaterNoText"]
+            </div>
+        </div>
+        <br>
+        <!-- Image Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="../images/h-sport-blueberry.png" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+        <br>
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-2 img-portfolio">
+                <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-hover" src="../images/mineral-water-strawberry_400x600-200x300.jpg" alt="">
+                </a>
+                <h4 class="text-center">
+                    <a asp-controller="Home" asp-action="MineralWater">@ViewData["Strawberry"]</a>
+                </h4>
+            </div>
+            <div class="col-md-2 img-portfolio">
+                <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-hover" src="../images/mineral-water-raspberry_400x600-200x300.jpg" alt="">
+                </a>
+                <h4 class="text-center">
+                    <a asp-controller="Home" asp-action="MineralWater">@ViewData["Raspberry"]</a>
+                </h4>
+            </div>
+            <div class="col-md-2 img-portfolio">
+                <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-hover" src="../images/mineral-water-peach_400x600-200x300.jpg" alt="">
+                </a>
+                <h4 class="text-center">
+                    <a asp-controller="Home" asp-action="MineralWater">@ViewData["Peach"]</a>
+                </h4>
+            </div>
+            <div class="col-md-2 img-portfolio">
+                <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-hover" src="../images/mineral-water-orange_400x600-200x300.jpg" alt="">
+                </a>
+                <h4 class="text-center">
+                    <a asp-controller="Home" asp-action="MineralWater">@ViewData["Orange"]Orange</a>
+                </h4>
+            </div>
+            <div class="col-md-2 img-portfolio">
+                <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-hover" src="../images/mineral-water-lemon-lime_400x600-200x300.jpg" alt="">
+                </a>
+                <h4 class="text-center">
+                    <a asp-controller="Home" asp-action="MineralWater">@ViewData["LemonLime"]</a>
+                </h4>
+            </div>
+            <div class="col-md-2 img-portfolio">
+                <a asp-controller="Home" asp-action="MineralWater">
+                    <img class="img-responsive img-hover" src="../images/minearl-water-blueberry_400x600-200x300.jpg" alt="">
+                </a>
+                <h4 class="text-center">
+                    <a asp-controller="Home" asp-action="MineralWater">@ViewData["Blueberry"]</a>
+                </h4>
+            </div>
+        </div>
+        <!-- /.row -->

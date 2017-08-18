@@ -1,0 +1,95 @@
+@{ ViewData["Title"] = "Team"; }
+<!-- Page Content -->
+<div class="container">
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">@ViewData["Team"]
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a asp-controller="Home" asp-action="Index">@ViewData["Home"]</a>
+                    </li>
+                    <li class="active">@ViewData["Team"]</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive img-hover" src="../images/Henry-Twill_LYNDA_34248-e1495822530289.jpg" alt="">
+            </div>
+            <div class="col-md-5">
+                <h3>Henry Twill, Jr</h3>
+                <h4>CEO</h4>
+                <p>@ViewData["HenryTwillBio"]</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive" src="../images/Jessica-Newton-Smith-CFO-HSport_LYNDA_34276-e1495822224127.jpg" alt="Jessica-Newton-Smith-CFO-HSport_LYNDA_34276-e1495822224127">
+            </div>
+            <div class="col-md-5">
+                <h3>Jessica Newton-Smith, MBA</h3>
+                <h4>CFO</h4>
+                <p>@ViewData["JessicaNewtonSmithBio"]</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive" src="../images/Phi-Tang-Director-of-Product-Development-HSport_LYNDA_34279.jpg" alt="">
+            </div>
+            <div class="col-md-5">
+                <h3>Phi Tang, MBA</h3>
+                <h4>@ViewData["DirectorProdDev"]</h4>
+                <p>@ViewData["PhiTangBio"]</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive" src="../images/Maria-Sontas-Director-of-Marketing-HSport_LYNDA_34277.jpg" alt="">
+            </div>
+            <div class="col-md-5">
+                <h3>Maria Sontas</h3>
+                <h4>@ViewData["DirectorMarketing"]</h4>
+                <p>@ViewData["MariaSontasBio"]</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive" src="../images/Angela-Hashton-Director-of-Sales-H-Sport_LYNDA_34272-e1495822397594.jpg" alt="">
+            </div>
+            <div class="col-md-5">
+                <h3>Angela Hashton</h3>
+                <h4>@ViewData["DirectorSales"]</h4>
+                <p>@ViewData["AngelaHashtonBio"]</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5">
+                <img class="img-responsive" src="../images/Michael-Lewiston_MFA-Creative-Director-HSport_LYNDA_34278.jpg" alt="">
+            </div>
+            <div class="col-md-5">
+                <h3>Michael Lewiston, MFA</h3>
+                <h4>@ViewData["CreativeDirector"]</h4>
+                <p>@ViewData["MichaelLewistonBio"]</p>
+            </div>
+        </div>

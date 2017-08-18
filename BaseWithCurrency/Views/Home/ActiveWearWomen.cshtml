@@ -1,0 +1,98 @@
+@{ ViewData["Title"] = "Active Wear - Women"; }
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">@ViewData["ActiveWearWomen"]
+            </h1>
+            <ol class="breadcrumb">
+                <li><a asp-controller="Home" asp-action="Index">@ViewData["Home"]</a>
+                </li>
+                <li class="active">@ViewData["ActiveWearWomen"]</li>
+            </ol>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Projects Row -->
+    <div class="row">
+        <div class="col-md-4 img-portfolio">
+            <a href="#">
+                    <img class="img-responsive img-hover" src="../images/crossback-tank_LYNDA_29936-300x300.jpg" alt="">
+                </a>
+            <h3>
+                <a href="#">@ViewData["TrainingTank"]</a>
+            </h3>
+            <h4>
+                @ViewData["TrainingTankPrice"]
+            </h4>
+            <p>@ViewData["TrainingTankDescript"]</p>
+        </div>
+        <div class="col-md-4 img-portfolio">
+            <a href="#">
+                    <img class="img-responsive img-hover" src="../images/unisex-grunge-jeans_LYNDA_29937-300x300.jpg" alt="">
+                </a>
+            <h3>
+                <a href="#">@ViewData["Jeans"]</a>
+            </h3>
+            <h4>
+                $60.00
+            </h4>
+            <p>@ViewData["JeansDescript"]</p>
+        </div>
+        <div class="col-md-4 img-portfolio">
+            <a href="#">
+                    <img class="img-responsive img-hover" src="../images/slicker-jacket_LYNDA_29941-300x300.jpg" alt="">
+                </a>
+            <h3>
+                <a href="#">@ViewData["Jacket"]</a>
+            </h3>
+            <h4>
+                $100.00
+            </h4>
+            <p>@ViewData["JacketDescript"]</p>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Projects Row -->
+    <div class="row">
+        <div class="col-md-4 img-portfolio">
+            <a href="#">
+                    <img class="img-responsive img-hover" src="../images/stretch-dance-pants_LYNDA_29942-300x300.jpg" alt="">
+                </a>
+            <h3>
+                <a href="#">@ViewData["DancePants"]</a>
+            </h3>
+            <h4>
+                $80.00
+            </h4>
+            <p>@ViewData["DancePantsDescript"]</p>
+        </div>
+        <div class="col-md-4 img-portfolio">
+            <a href="#">
+                    <img class="img-responsive img-hover" src="../images/ultra-soft-tank-top-for-women_LYNDA_29945-300x300.jpg" alt="">
+                </a>
+            <h3>
+                <a href="#">@ViewData["TankTop"]</a>
+            </h3>
+            <h4>
+                $19.99
+            </h4>
+            <p>@ViewData["TankTopDescript"]</p>
+        </div>
+        <div class="col-md-4 img-portfolio">
+            <a href="#">
+                    <img class="img-responsive img-hover" src="../images/unisex-thermal-vest_LYNDA_29944-300x300.jpg" alt="">
+                </a>
+            <h3>
+                <a href="#">@ViewData["Vest"]</a>
+            </h3>
+            <h4>
+                $150.00
+            </h4>
+            <p>@ViewData["VestDescript"]</p>
+        </div>
+    </div>

@@ -8,21 +8,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Localization;
 using Microsoft.Extensions.Localization;
 
-using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Http;
-
-using Microsoft.Extensions.Options;
-using Microsoft.AspNetCore.Builder;
-
 namespace BaseInternational.Controllers {
     public class HomeController : Controller {
         private readonly IStringLocalizer<HomeController> _localizer;
-
-        private IOptions<RequestLocalizationOptions> _locOptions;
-
-        public HomeController (IStringLocalizer<HomeController> localizer, IOptions<RequestLocalizationOptions> LocOptions) {
+        public HomeController (IStringLocalizer<HomeController> localizer) {
             _localizer = localizer;
-            _locOptions = LocOptions;
         }
 
         public IActionResult Index () {
@@ -196,23 +186,13 @@ namespace BaseInternational.Controllers {
 
             ViewData["ActiveWearWomen"] = _localizer["ActiveWearWomen"];
 
+            ViewData["TrainingTankPrice"] = String.Format("{0:C}", 39.99);
+
             return View ();
         }
 
         public IActionResult Error () {
             return View (new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
-        [HttpPost]
-        public IActionResult SetLanguage(string culture, string returnUrl)  
-        {
-            Response.Cookies.Append(
-                CookieRequestCultureProvider.DefaultCookieName,
-                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
-                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
-            );
-
-            return LocalRedirect(returnUrl);
         }
     }
 }
