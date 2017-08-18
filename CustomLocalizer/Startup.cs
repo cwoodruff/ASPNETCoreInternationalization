@@ -18,11 +18,11 @@ namespace CustomLocalizer
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMyLocalization();
+            services.AddMyLocalization(); ////////////////////////////////
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IStringLocalizer<Startup> stringLocalizer)
+        public void Configure(IApplicationBuilder app, IStringLocalizer<Startup> stringLocalizer) ////////////////////////
         {
             app.UseRequestLocalization(BuildLocalizationOptions());
 
@@ -31,7 +31,7 @@ namespace CustomLocalizer
                 context.Response.StatusCode = 200;
                 context.Response.ContentType = "text/html; charset=utf-8";
 
-                await context.Response.WriteAsync(BuildResponse(stringLocalizer));
+                await context.Response.WriteAsync(BuildResponse(stringLocalizer)); ////////////////
             });
         }
         

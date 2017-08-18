@@ -66,7 +66,6 @@ namespace BaseInternational {
             var requestoptions = BuildLocalizationOptions();
 
             app.UseRequestLocalization(requestoptions);
-            var locOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
 
             app.UseMvc (routes => {
                 routes.MapRoute (
@@ -86,7 +85,7 @@ namespace BaseInternational {
             };
 
             var options = new RequestLocalizationOptions();
-            options.DefaultRequestCulture = new RequestCulture(culture: "en-US", uiCulture: "en-US");
+            options.DefaultRequestCulture = new RequestCulture(culture: "fr-FR", uiCulture: "fr-FR");
             options.SupportedCultures = supportedCultures;
             options.SupportedUICultures = supportedCultures;
 

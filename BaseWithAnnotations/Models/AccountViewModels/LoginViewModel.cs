@@ -14,10 +14,12 @@ namespace BaseInternational.Models.AccountViewModels
         [Display(Name = "YourEmail")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Required")]
+        [Display(Name = "Password")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
+        [Display(Name = "RememberMe")]
         public bool RememberMe { get; set; }
     }
 }

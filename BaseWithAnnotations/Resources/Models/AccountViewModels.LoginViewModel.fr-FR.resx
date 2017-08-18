@@ -118,13 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 
-  <data name="Models.AccountViewModels.LoginViewModel.NotValidEmail" xml:space="preserve">
+  <data name="NotValidEmail" xml:space="preserve">
     <value>Le champ Email est pas une adresse e -mail valide</value>
   </data>
-  <data name="Models.AccountViewModels.LoginViewModel.Required" xml:space="preserve">
+  <data name="Required" xml:space="preserve">
     <value>Obligatoire</value>
   </data>
-  <data name="Models.AccountViewModels.LoginViewModel.YourEmail" xml:space="preserve">
+  <data name="YourEmail" xml:space="preserve">
     <value>Votre Email</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>Se souvenir de moi</value>
   </data>
 </root>
