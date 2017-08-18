@@ -11,18 +11,12 @@ using Microsoft.Extensions.Localization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Http;
 
-using Microsoft.Extensions.Options;
-using Microsoft.AspNetCore.Builder;
-
 namespace BaseInternational.Controllers {
     public class HomeController : Controller {
         private readonly IStringLocalizer<HomeController> _localizer;
 
-        private IOptions<RequestLocalizationOptions> _locOptions;
-
-        public HomeController (IStringLocalizer<HomeController> localizer, IOptions<RequestLocalizationOptions> LocOptions) {
+        public HomeController (IStringLocalizer<HomeController> localizer) {
             _localizer = localizer;
-            _locOptions = LocOptions;
         }
 
         public IActionResult Index () {

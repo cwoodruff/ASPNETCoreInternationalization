@@ -7,12 +7,17 @@ using BaseInternational.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Localization;
 using Microsoft.Extensions.Localization;
+using System.Globalization;
 
 namespace BaseInternational.Controllers {
     public class HomeController : Controller {
         private readonly IStringLocalizer<HomeController> _localizer;
+        private ExchangeRate _exchangeRate;
+
         public HomeController (IStringLocalizer<HomeController> localizer) {
             _localizer = localizer;
+
+            _exchangeRate = new ExchangeRate();
         }
 
         public IActionResult Index () {
@@ -186,7 +191,11 @@ namespace BaseInternational.Controllers {
 
             ViewData["ActiveWearWomen"] = _localizer["ActiveWearWomen"];
 
-            ViewData["TrainingTankPrice"] = String.Format("{0:C}", 39.99);
+            if (!(CultureInfo.CurrentCulture.Name == "en-US"))
+                ViewData["TrainingTankPrice"] = String.Format("{0:C}", _exchangeRate.ConvertToEUR(39.99));
+            else
+                ViewData["TrainingTankPrice"] = String.Format("{0:C}", 39.99);
+
 
             return View ();
         }

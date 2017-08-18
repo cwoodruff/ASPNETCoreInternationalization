@@ -5,13 +5,16 @@
 @using Microsoft.Extensions.Options
 
 @inject IViewLocalizer Localizer
-@inject IOptions<RequestLocalizationOptions> LocOptions
 
 @{
     var requestCulture = Context.Features.Get<IRequestCultureFeature>();
-    var cultureItems = LocOptions.Value.SupportedUICultures
-        .Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
-        .ToList();
+    var cultureItems = new List<SelectListItem>
+            {
+                new SelectListItem { Value = @"en-US", Text = @"english (United States)" },
+                new SelectListItem { Value = @"es-ES", Text = @"spanish (Spain)" },
+                new SelectListItem { Value = @"fr-FR", Text = @"french (France)" },
+                new SelectListItem { Value = @"pt-PT", Text = @"portuguese (Portugal)" }
+            };
 }
 
 <div title="@Localizer["Request culture provider:"] @requestCulture?.Provider?.GetType().Name">  

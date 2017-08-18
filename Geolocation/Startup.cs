@@ -30,10 +30,12 @@ namespace Geolocation {
         }
 
         private string BuildResponse (IHttpContextAccessor contextAccessor) {
-            //String UserIP = contextAccessor.HttpContext.Connection.LocalIpAddress.ToString ();
-            String UserIP = contextAccessor.HttpContext.Features.Get<IHttpConnectionFeature>()?.RemoteIpAddress?.ToString();
+            String UserIP = contextAccessor.HttpContext.Connection.LocalIpAddress.ToString ();
             if (string.IsNullOrEmpty (UserIP)) {
-                UserIP = contextAccessor.HttpContext.Connection.RemoteIpAddress.ToString ();
+                UserIP = contextAccessor.HttpContext.Features.Get<IHttpConnectionFeature>()?.RemoteIpAddress?.ToString();
+            }
+            if (String.Compare(UserIP, "::1") == 0) {
+                UserIP = "216.84.189.6";
             }
             string url = "http://freegeoip.net/json/" + UserIP;
             HttpClient client = new HttpClient ();
@@ -61,26 +63,37 @@ namespace Geolocation {
         }
 
         private class GeoIP {
+            [JsonProperty("ip")]
             public string ip { get; private set; }
 
+            [JsonProperty("country_code")]
             public string country_code { get; private set; }
 
+            [JsonProperty("country_name")]
             public string country_name { get; private set; }
 
+            [JsonProperty("region_code")]
             public string region_code { get; private set; }
 
+            [JsonProperty("region_name")]
             public string region_name { get; private set; }
 
+            [JsonProperty("city")]
             public string city { get; private set; }
 
+            [JsonProperty("zip_code")]
             public string zip_code { get; private set; }
 
+            [JsonProperty("time_zone")]
             public string time_zone { get; private set; }
 
+            [JsonProperty("latitude")]
             public string latitude { get; private set; }
 
+            [JsonProperty("longitude")]
             public string longitude { get; private set; }
 
+            [JsonProperty("metro_code")]
             public string metro_code { get; private set; }
         }
     }

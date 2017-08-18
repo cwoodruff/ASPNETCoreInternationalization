@@ -20,6 +20,7 @@ using Microsoft.Extensions.Options;
 
 namespace BaseInternational {
     public class Startup {
+
         public Startup (IConfiguration configuration) {
             Configuration = configuration;
         }
